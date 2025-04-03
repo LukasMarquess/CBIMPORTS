@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBImports</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./Imagens/Logo.png" alt="Logo CBImports">
+                    <h1>CB Imports</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#sobre-loja">Sobre a loja</a></li>
+                        <li><a href="#product-section">Produtos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id ="sobre-loja">
+        <div class="container">
+            <div class="hero-content">
+                <img src="./Imagens/apresenta.png" alt="Logo da impresa">
+                <div class="sobre-loja-paragraph">
+                    <h2>Sobre a loja</h2>
+                    <p>CB Imports é uma loja de importação de produtos de alta qualidade, oferecendo uma ampla variedade de itens para atender às suas necessidades. Nossa missão é proporcionar aos nossos clientes uma experiência de compra excepcional, com produtos exclusivos e atendimento personalizado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="product-section">
+        <div class="container">
+            <div class="sobre-loja-paragraph">
+                <h2>Produtos</h2>
+            </div>
+            <ul>
+                <li>
+                    <img src="./Imagens/iphone16.png" alt="Iphone 16">
+                    <h3>Iphone 16 Plus</h3>
+                    <p>256 GB e 8 GB de RAM</p>
+                    <span>R$ 8999,99</span>
+                    <br>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./Imagens/iphone16.png" alt="Iphone 16">
+                    <h3>Iphone 16 Plus</h3>
+                    <p>256 GB e 8 GB de RAM</p>
+                    <span>R$ 8999,99</span>
+                    <br>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./Imagens/iphone16.png" alt="Iphone 16">
+                    <h3>Iphone 16 Plus</h3>
+                    <p>256 GB e 8 GB de RAM</p>
+                    <span>R$ 8999,99</span>
+                    <br>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./Imagens/iphone16.png" alt="Iphone 16">
+                    <h3>Iphone 16 Plus</h3>
+                    <p>256 GB e 8 GB de RAM</p>
+                    <span>R$ 8999,99</span>
+                    <br>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CB Imports. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('nav a').on('click', function(event) {
+                event.preventDefault();
+                var target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 800);
+            });
+        });
+    </script>
+</body>
+</html>
